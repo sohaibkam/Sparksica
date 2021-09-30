@@ -1,5 +1,11 @@
 const Pool = require("pg").Pool;
 require("dotenv").config();
+const pg = require("pg");
+
+pg.types.setTypeParser(1114, function (stringValue) {
+    console.log(stringValue);
+    return stringValue; //1114 for time without timezone type
+});
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: {

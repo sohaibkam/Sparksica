@@ -5,5 +5,5 @@ require("dotenv").config();
 const PORT = process.env.PORT;
 
 httpServer.listen(PORT, () => {
-    console.log("Server speaks to martian.");
+    console.log(`Server speaks to PORT ${PORT}`);
 });

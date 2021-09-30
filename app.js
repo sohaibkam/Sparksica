@@ -7,11 +7,12 @@ const customerRouter = require("./controllers/customer");
 const transactionRouter = require("./controllers/transactions");
 
 //MIDDLEWARE//
+app.use(express.static("./build"));
 app.use(cors());
 app.use(express.json()); //to support JSON-encoded bodies , req.body
 
 //ROUTES//
-app.use("/customer", customerRouter);
-app.use("/transactions", transactionRouter);
+app.use("/api/customer", customerRouter);
+app.use("/api/transactions", transactionRouter);
 
 module.exports = app;
