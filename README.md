@@ -10,7 +10,7 @@ TECHNOLOGY USED:
 => Database : PostgreSQL
 
 HOSTING PLATFORM (Heroku)
-Deployed Link: https://sparkica.herokuapp.com/
+Deployed Link: https://sparkica.herokuapp.com/ (Expired)
 
 Youtube Link: https://youtu.be/FSljRJEI__U
 
